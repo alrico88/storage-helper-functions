@@ -1,0 +1,20 @@
+{
+  "name": "storage-helper-functions",
+  "version": "1.0.0",
+  "description": "Functions to help usage of localStorage or sessionStorage",
+  "keywords": [
+    "storage",
+    "localStorage",
+    "sessionStorage"
+  ],
+  "main": "index.js",
+  "repository": "https://github.com/alrico88/storage-helper-functions",
+  "author": "Alberto Rico",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^5.4"
+  },
+  "dependencies": {
+    "lz-string": "^1.4.4"
+  }
+}
