@@ -71,7 +71,7 @@ export default class StorageHelper {
     const dataToStore = StorageHelper.isJSONSelected(format)
       ? this.stringifyJSON(data)
       : data;
-    this.storageProvider.setItem(key, dataToStore);
+    this.provider.setItem(key, dataToStore);
   }
 
   /**
@@ -83,7 +83,7 @@ export default class StorageHelper {
    * @memberof StorageHelper
    */
   get(key, format = 'text') {
-    const data = this.storageProvider.getItem(key);
+    const data = this.provider.getItem(key);
     return StorageHelper.isJSONSelected(format) ? this.parseJSON(data) : data;
   }
 }

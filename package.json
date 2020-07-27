@@ -1,6 +1,6 @@
 {
   "name": "storage-helper-functions",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Functions to help usage of localStorage or sessionStorage",
   "keywords": [
     "storage",
