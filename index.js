@@ -84,6 +84,19 @@ export default class StorageHelper {
    */
   get(key, format = 'text') {
     const data = this.provider.getItem(key);
-    return StorageHelper.isJSONSelected(format) ? this.parseJSON(data) : data;
+
+    let toReturn = null;
+
+    if (StorageHelper.isJSONSelected(format)) {
+      try {
+        toReturn = this.parseJSON(data);
+      } catch (e) {
+        toReturn = null;
+      }
+    } else {
+      toReturn = data;
+    }
+
+    return toReturn;
   }
 }
